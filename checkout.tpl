@@ -135,12 +135,12 @@
                         </div>
                     </div>
 
-                    <div class="sub-heading">
+                    <div class="sub-heading" style="display:none;">
                         <span>{$LANG.orderForm.billingAddress}</span>
                     </div>
 
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-sm-12" style="display:none;">
                             <div class="form-group prepend-icon">
                                 <label for="inputCompanyName" class="field-icon">
                                     <i class="fas fa-building"></i>
@@ -148,7 +148,7 @@
                                 <input type="text" name="companyname" id="inputCompanyName" class="field" placeholder="{$LANG.orderForm.companyName} ({$LANG.orderForm.optional})" value="{$clientsdetails.companyname}"{if $loggedin} readonly="readonly"{/if}>
                             </div>
                         </div>
-                        <div class="col-sm-12">
+                        <div class="col-sm-12" style="display:none;">
                             <div class="form-group prepend-icon">
                                 <label for="inputAddress1" class="field-icon">
                                     <i class="far fa-building"></i>
@@ -156,7 +156,7 @@
                                 <input type="text" name="address1" id="inputAddress1" class="field" placeholder="{$LANG.orderForm.streetAddress}" value="{$clientsdetails.address1}"{if $loggedin} readonly="readonly"{/if}>
                             </div>
                         </div>
-                        <div class="col-sm-12">
+                        <div class="col-sm-12" style="display:none;">
                             <div class="form-group prepend-icon">
                                 <label for="inputAddress2" class="field-icon">
                                     <i class="fas fa-map-marker-alt"></i>
@@ -164,7 +164,7 @@
                                 <input type="text" name="address2" id="inputAddress2" class="field" placeholder="{$LANG.orderForm.streetAddress2}" value="{$clientsdetails.address2}"{if $loggedin} readonly="readonly"{/if}>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-4" style="display:none;">
                             <div class="form-group prepend-icon">
                                 <label for="inputCity" class="field-icon">
                                     <i class="far fa-building"></i>
@@ -172,7 +172,7 @@
                                 <input type="text" name="city" id="inputCity" class="field" placeholder="{$LANG.orderForm.city}" value="{$clientsdetails.city}"{if $loggedin} readonly="readonly"{/if}>
                             </div>
                         </div>
-                        <div class="col-sm-5">
+                        <div class="col-sm-5" style="display:none;">
                             <div class="form-group prepend-icon">
                                 <label for="state" class="field-icon" id="inputStateIcon">
                                     <i class="fas fa-map-signs"></i>
@@ -183,7 +183,7 @@
                                 <input type="text" name="state" id="inputState" class="field" placeholder="{$LANG.orderForm.state}" value="{$clientsdetails.state}"{if $loggedin} readonly="readonly"{/if}>
                             </div>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-3" style="display:none;">
                             <div class="form-group prepend-icon">
                                 <label for="inputPostcode" class="field-icon">
                                     <i class="fas fa-certificate"></i>
@@ -191,7 +191,7 @@
                                 <input type="text" name="postcode" id="inputPostcode" class="field" placeholder="{$LANG.orderForm.postcode}" value="{$clientsdetails.postcode}"{if $loggedin} readonly="readonly"{/if}>
                             </div>
                         </div>
-                        <div class="col-sm-12">
+                        <div class="col-sm-12" style="display:none;">
                             <div class="form-group prepend-icon">
                                 <label for="inputCountry" class="field-icon" id="inputCountryIcon">
                                     <i class="fas fa-globe"></i>
