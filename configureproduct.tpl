@@ -128,28 +128,28 @@ var _localLang = {
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label for="inputHostname">{$LANG.serverhostname}</label>
-                                            <input type="text" name="hostname" class="form-control" id="inputHostname" value="{$server.hostname}" placeholder="servername.yourdomain.com">
+                                            <input type="text" name="hostname" class="form-control" id="inputHostname" value="{if !empty($server.hostname)}{$server.hostname}{else}s{uniqid(mt_rand(10,99))}.local{/if}" readonly>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label for="inputRootpw">{$LANG.serverrootpw}</label>
-                                            <input type="password" name="rootpw" class="form-control" id="inputRootpw" value="{$server.rootpw}">
+                                            <input type="text" name="rootpw" class="form-control" id="inputRootpw" value="{if !empty($server.rootpw)}{$server.rootpw}{else}{uniqid(mt_rand(10,99))}{/if}" readonly>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="row">
+                                <div class="row" style="display: none;">
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label for="inputNs1prefix">{$LANG.serverns1prefix}</label>
-                                            <input type="text" name="ns1prefix" class="form-control" id="inputNs1prefix" value="{$server.ns1prefix}" placeholder="ns1">
+                                            <input type="text" name="ns1prefix" class="form-control" id="inputNs1prefix" value="ns1">
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label for="inputNs2prefix">{$LANG.serverns2prefix}</label>
-                                            <input type="text" name="ns2prefix" class="form-control" id="inputNs2prefix" value="{$server.ns2prefix}" placeholder="ns2">
+                                            <input type="text" name="ns2prefix" class="form-control" id="inputNs2prefix" value="ns2">
                                         </div>
                                     </div>
                                 </div>
